@@ -15,37 +15,44 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper"></div>
       <div class="weather-app">
-        <h1>New York</h1>
-        <ul>
-          <li>Friday 05:00</li>
-          <li>clear</li>
-        </ul>
+        <div class="overview">
+          <h1>New York</h1>
+          <ul>
+            <li>Friday 05:00</li>
+            <li>clear</li>
+          </ul>
+        </div>
         <div class="row">
           <div class="col-6">
+            <div class="d-flex weather-temperature">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
               alt="clear"
+              class="float-left"
             />
-            12°C | °F
-          </div>
-          <div class="col-6">
-            <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2km/h</li>
-            </ul>
-          </div>
+            <div class="float-left"><strong>12</strong><span class="units">°C | <a href="#">°F</a></span>
         </div>
-
-        <small>
-          <a
-            href="https://github.com/zoey-maria/vanilla-weather-app"
-            target="blank"
-            >Open-sourced Code</a
-          >, by Eva Heer</small
-        >
+        </div>
+        </div>
+        <div class="col-6">
+          <ul>
+            <li>Precipitation: 0%</li>
+            <li>Humidity: 73%</li>
+            <li>Wind: 2km/h</li>
+          </ul>
+        </div>
       </div>
+      </div>
+      </body>
+      <small>
+        <a
+          href="https://github.com/zoey-maria/vanilla-weather-app"
+          target="blank"
+          >Open-sourced Code</a
+        >, by Eva Heer</small
+      >
     </div>
     <script src="src/app.js"></script>
   </body>
