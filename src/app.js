@@ -45,15 +45,7 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-
-let apiKey = "4fa0a81309d47a899aaef7c0ee119b87";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(displayTemperature);
-
-console.log(apiKey);
-axios.get(apiUrl).then(displayTemperature);
-
-function searchCity(city) {
+function search(city) {
   let apiKey = "4fa0a81309d47a899aaef7c0ee119b87";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
@@ -61,10 +53,8 @@ function searchCity(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#input-form").value;
-  searchCity(cityInputElement.value);
+  let cityInputElement = document.querySelector("#city-input").value;
+  search(cityInputElement.value);
 }
-let searchForm = document.querySelector("#search-form");
-searchForm.addEventListener("submit", handleSubmit);
-
-searchCity("Audierne");
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
