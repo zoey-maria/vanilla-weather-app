@@ -1,10 +1,3 @@
-body {
-  background: linear-gradient(
-    109.1deg,
-    rgb(42, 132, 201) 14.6%,
-    rgb(47, 249, 233) 108.2%
-  );
-}
 h1 {
   color: #181526;
   font-size: 38px;
@@ -47,6 +40,12 @@ li:first-letter {
   border: 1px solid #dadde1;
   border-radius: 10px;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  background: linear-gradient(
+    109.1deg,
+    rgb(42, 132, 201) 14.6%,
+    rgb(47, 249, 233) 108.2%
+  );
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .weather-temperature img {
   margin-right: 10px;
@@ -64,4 +63,13 @@ li:first-letter {
   font-weight: 700;
   line-height: 1;
   margin-left: 10px;
+}
+.weather-temperature .active {
+  color: #212121;
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
