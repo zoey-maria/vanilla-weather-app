@@ -58,9 +58,8 @@ li:first-letter {
 }
 .weather-temperature strong {
   color: #212121;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 400;
-  font-weight: 700;
   line-height: 1;
   margin-left: 10px;
 }
@@ -72,4 +71,19 @@ li:first-letter {
 
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
 }

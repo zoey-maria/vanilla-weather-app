@@ -18,17 +18,23 @@
     <div class="container">
       <div class="weather-app-wrapper"></div>
       <div class="weather-app">
-    <form id="search-form" class="mb-3">
-      <div class="row">
-      <div class="col-9">
-      <input type="search" placeholder="Enter a city..."  class="form-control" id="city-input" autocomplete="off"/>
-      </div>
-      <div class="col-3">
-        <input type="submit" value="search" class="btn btn-primary"/>
-    </div>
-  </div>
-  </form> 
-  <div class="overview">
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city..."
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="search" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
+        <div class="overview">
           <h1 id="city"></h1>
           <ul>
             <li>Last updated: <span id="date"></span></li>
@@ -38,22 +44,40 @@
         <div class="row">
           <div class="col-6">
             <div class="d-flex weather-temperature">
-            <img
-              src="" id="icon" class="float-left"
-            />
-            <div class="float-left"><strong id="temperature"></strong><span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+              <img src="" id="icon" class="float-left" />
+              <div class="float-left">
+                <strong id="temperature"></strong
+                ><span class="units"
+                  ><a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
         </div>
-        </div>
-        </div>
-        <div class="col-6">
-          <ul>
-            <li>Humidity: <span id="humidity"></span>%</li>
-            <li>Wind: <span id="wind"></span> km/h</li>
-          </ul>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">Thu</div>
+              <img
+                src="http://openweathermap.org/img/wn/04n@2x.png"
+                alt=""
+                width="42"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">18°</span>
+                <span class="weather-forecast-temperature-min">12°</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      </body>
       <small>
         <a
           href="https://github.com/zoey-maria/vanilla-weather-app"
